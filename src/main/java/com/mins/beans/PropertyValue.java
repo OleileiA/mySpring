@@ -1,25 +1,21 @@
 package com.mins.beans;
 
 public class PropertyValue {
-    private final String type;
-    private final String name;
-    private final Object value;
 
-    public PropertyValue(String type, String name, Object value) {
-        this.type = type;
-        this.name = name;
-        this.value = value;
-    }
+	private final String name;
 
-    public String getType() {
-        return this.type;
-    }
+	private final Object value;
 
-    public String getName() {
-        return this.name;
-    }
+	public PropertyValue(String name, Object value) {
+		this.name = name;
+		this.value = value;
+	}
 
-    public Object getValue() {
-        return this.value;
-    }
+	public String getName() {
+		return this.name;
+	}
+
+	public Object getValue() {
+		return this.value;
+	}
 }

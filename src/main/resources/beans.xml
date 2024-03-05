@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <beans>
     <bean id="aservice" class="com.mins.test.AServiceImpl"></bean>
+
+
+    <!--  构造器注入  -->
+    <bean id="aservice1" class="com.minis.test.AServiceImpl">
+        <constructor-arg type="String" name="name" value="abc"/>
+        <constructor-arg type="int" name="level" value="3"/>
+    </bean>
+
+    <!-- 属性注入 -->
+    <bean id="aservice2" class="com.mins.test.AServiceImpl">
+        <property name="name" value="abc"/>
+        <property name="level" value="3"/>
+    </bean>
 </beans>
