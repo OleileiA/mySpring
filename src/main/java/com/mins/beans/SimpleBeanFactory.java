@@ -1,7 +1,5 @@
 package com.mins.beans;
 
-import com.mins.BeanDefinition;
-
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 

@@ -1,4 +1,4 @@
-package com.mins;
+package com.mins.beans;
 
 import com.mins.beans.ArgumentValues;
 import com.mins.beans.PropertyValues;

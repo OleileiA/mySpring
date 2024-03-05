@@ -1,6 +1,5 @@
 package com.mins.beans;
 
-import com.mins.BeanDefinition;
 import com.mins.core.Resource;
 import org.dom4j.Element;
 
