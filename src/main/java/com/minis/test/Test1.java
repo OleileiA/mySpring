@@ -7,7 +7,7 @@ public class Test1 {
 
 	public static void main(String[] args) {
 		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("beans.xml");
-	    AService aService;
+	    com.minis.test.AService aService;
 		try {
 			aService = (AService)ctx.getBean("aservice");
 		    aService.sayHello();

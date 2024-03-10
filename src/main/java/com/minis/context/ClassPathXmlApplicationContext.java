@@ -7,15 +7,23 @@ import com.minis.beans.XmlBeanDefinitionReader;
 import com.minis.core.ClassPathXmlResource;
 import com.minis.core.Resource;
 
-public class ClassPathXmlApplicationContext implements BeanFactory,ApplicationEventPublisher{
+public class ClassPathXmlApplicationContext implements BeanFactory, ApplicationEventPublisher {
 	SimpleBeanFactory beanFactory;
 
     public ClassPathXmlApplicationContext(String fileName){
+    	this(fileName, true);
+    }
+
+    public ClassPathXmlApplicationContext(String fileName, boolean isRefresh){
     	Resource res = new ClassPathXmlResource(fileName);
     	SimpleBeanFactory bf = new SimpleBeanFactory();
         XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(bf);
         reader.loadBeanDefinitions(res);
         this.beanFactory = bf;
+
+        if (isRefresh) {
+        	this.beanFactory.refresh();
+        }
     }
 
 	@Override

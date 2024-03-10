@@ -1,28 +1,28 @@
 package com.minis.beans;
 
-	import java.util.ArrayList;
-	import java.util.List;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ArgumentValues {
-	private final List<ArgumentValue> argumentValueList = new ArrayList<ArgumentValue>();
+		private final List<com.minis.beans.ArgumentValue> argumentValueList = new ArrayList<com.minis.beans.ArgumentValue>();
 
-	public ArgumentValues() {
-	}
+		public ArgumentValues() {
+		}
 
-	public void addArgumentValue(ArgumentValue argumentValue) {
-		this.argumentValueList.add(argumentValue);
-	}
+		public void addArgumentValue(com.minis.beans.ArgumentValue argumentValue) {
+			this.argumentValueList.add(argumentValue);
+		}
 
-	public ArgumentValue getIndexedArgumentValue(int index) {
-		ArgumentValue argumentValue = this.argumentValueList.get(index);
-		return argumentValue;
-	}
+		public com.minis.beans.ArgumentValue getIndexedArgumentValue(int index) {
+			ArgumentValue argumentValue = this.argumentValueList.get(index);
+			return argumentValue;
+		}
 
-	public int getArgumentCount() {
-		return (this.argumentValueList.size());
-	}
+		public int getArgumentCount() {
+			return (this.argumentValueList.size());
+		}
 
-	public boolean isEmpty() {
-		return (this.argumentValueList.isEmpty());
+		public boolean isEmpty() {
+			return (this.argumentValueList.isEmpty());
+		}
 	}
-}
