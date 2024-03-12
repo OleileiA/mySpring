@@ -1,4 +1,4 @@
-package com.minis.beans;
+package com.minis.beans.factory.config;
 
 	import java.util.ArrayList;
 import java.util.Collections;
@@ -10,18 +10,18 @@ import java.util.Iterator;
 	import java.util.Map;
 	import java.util.Set;
 
-public class ArgumentValues {
-	private final List<ArgumentValue> argumentValueList = new ArrayList<ArgumentValue>();
+public class ConstructorArgumentValues {
+	private final List<ConstructorArgumentValue> argumentValueList = new ArrayList<ConstructorArgumentValue>();
 
-	public ArgumentValues() {
+	public ConstructorArgumentValues() {
 	}
 
-	public void addArgumentValue(ArgumentValue argumentValue) {
+	public void addArgumentValue(ConstructorArgumentValue argumentValue) {
 		this.argumentValueList.add(argumentValue);
 	}
 
-	public ArgumentValue getIndexedArgumentValue(int index) {
-		ArgumentValue argumentValue = this.argumentValueList.get(index);
+	public ConstructorArgumentValue getIndexedArgumentValue(int index) {
+		ConstructorArgumentValue argumentValue = this.argumentValueList.get(index);
 		return argumentValue;
 	}
 

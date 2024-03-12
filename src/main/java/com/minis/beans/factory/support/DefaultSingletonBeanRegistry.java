@@ -1,4 +1,4 @@
-package com.minis.beans;
+package com.minis.beans.factory.support;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -7,6 +7,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
+
+import com.minis.beans.factory.config.SingletonBeanRegistry;
 
 public class DefaultSingletonBeanRegistry  implements SingletonBeanRegistry {
     protected List<String> beanNames=new ArrayList<>();
